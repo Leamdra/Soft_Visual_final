@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Equipamento</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+    <script src="script/script2.js"></script>
+</head>
+<body>
+    
+
+    <header>
+        <h1>Cadastro de equipamentos</h1>
+    </header>
+
+    <main>
+        
+        <div class="title"> 
+            <h2>Equiepamentos</h2>
+            <span>lista de equipamentos</span>
+        </div>
+
+        <div class="card">
+    
+            <div class="lineInput">
+                <label>Equipamento</label>
+                <input type="text" id="equipamento" placeholder="Equipamento">
+            </div>
+
+            <div class="lineInput">
+                <label>Local de instalação</label>
+                <input type="text" id="instalação" placeholder="Local de instalação">
+            </div>
+
+
+            <button onclick="equipamento.salvar()" id="btn1" >Salvar</button>
+            <button onclick="equipamento.excluir()">Excluir</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th class="center">Equipamento</th>
+                    <th class="center">Local de instalação</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody id="tbody">
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    
+</body>
+</html>
